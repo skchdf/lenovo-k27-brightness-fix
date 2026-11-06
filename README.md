@@ -8,6 +8,8 @@
 >
 > 修复只需要在内核命令行加一个参数：`acpi_backlight=native`。
 > 不需要装驱动、不用 DKMS、不用改显示管理器。
+>
+> **重装系统后想让 AI 直接恢复？** 复制 [RESTORE.md](RESTORE.md) 里的提示词即可。
 
 ## 症状
 
@@ -182,6 +184,7 @@ sudo reboot
 ```
 .
 ├── README.md                        # 本文件：症状、原理、修复、验证、坑
+├── RESTORE.md                       # 重装系统后：一条提示词让 AI 直接恢复
 ├── MACHINE.md                       # 本机完整参数与修复前后现场数据
 ├── PROMPTS.md                       # 可复用的 AI 诊断/修复/救援提示词
 ├── docs/
@@ -213,6 +216,7 @@ sudo reboot
 - 详细诊断：[docs/diagnosis.md](docs/diagnosis.md)
 - 黑屏救援：[docs/recovery.md](docs/recovery.md)
 - 修复复盘：[docs/experience.md](docs/experience.md)
+- 重装后一条提示词恢复：[RESTORE.md](RESTORE.md)
 - AI 提示词：[PROMPTS.md](PROMPTS.md)
 - 本机参数：[MACHINE.md](MACHINE.md)
 

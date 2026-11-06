@@ -63,7 +63,7 @@ sudo reboot
 当前 `/proc/cmdline`：
 
 ```text
-BOOT_IMAGE=/boot/vmlinuz-linux-zen root=UUID=4fdd0c08-65c5-a84b-a5ed-8fd1a28cc747 rw loglevel=2 zswap.enabled=0 acpi_backlight=native
+BOOT_IMAGE=/boot/vmlinuz-linux-zen root=UUID=<根分区UUID> rw loglevel=2 zswap.enabled=0 acpi_backlight=native
 ```
 
 当前 GRUB 相关配置：

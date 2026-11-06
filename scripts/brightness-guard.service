@@ -1,0 +1,16 @@
+[Unit]
+Description=Keep the panel backlight above zero (brightness-guard)
+Documentation=https://github.com/skchdf/lenovo-k27-brightness-fix
+After=systemd-udevd.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/brightness-guard.sh
+Environment=MIN_PERCENT=5
+Environment=INTERVAL=2
+Restart=on-failure
+RestartSec=2
+Nice=10
+
+[Install]
+WantedBy=multi-user.target
